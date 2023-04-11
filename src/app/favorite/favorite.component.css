@@ -1,0 +1,27 @@
+main {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px
+}
+
+.card{
+  padding: 2px;
+  background-color: rgb(255, 218, 218);
+  box-shadow: 4px 4px 3px 2px darkgrey;
+  width: 260px;
+  height: 260px;
+  text-align: center;
+}
+.card img{
+  border-radius: 12px;
+  width: 90%;
+  height: 80%;
+}
+mat-icon{
+  vertical-align: top;
+  align-items: right;
+}
+mat-icon:hover{
+  color: rgb(199, 22, 22);
+}

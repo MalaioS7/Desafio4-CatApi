@@ -1,0 +1,25 @@
+
+<main>
+  <div class="card" *ngFor="let race of races">
+    <br>
+    <img mat-card-xl-image [src]="race.url" id="image"><br>
+    <mat-icon (click)="adicionarFavorito(race.id)">favorite</mat-icon>
+  </div>
+</main>
+<br>
+<mat-progress-spinner mode="indeterminate" *ngIf="!races"></mat-progress-spinner>
+<!-- <mat-icon *ngFor="let race of races">favorite_border</mat-icon><br> -->
+
+
+<!-- <script src="https://fontawesome.com/search?q=heart&o=r"></script>
+<script type="text/javascript">
+  var coracao = document.getElementById("heart1");
+  function adicionarFavorito(){
+    if(coracao.style.color=="black"){
+      coracao.style.color = "red"
+    }
+    else{
+      coracao.style.color = "red"
+    }
+  }
+</script> -->

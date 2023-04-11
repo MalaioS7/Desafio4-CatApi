@@ -1,0 +1,36 @@
+/* main{
+  background-color: rgb(228, 228, 228);
+  height: 100%;
+  margin-left:15px
+} */
+main {
+  margin: 120px 0 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px
+}
+.card{
+  padding: 2px;
+  background-color: blanchedalmond;
+  box-shadow: 4px 4px 3px 2px darkgrey;
+  width: 260px;
+  height: 260px;
+  text-align: center;
+}
+.card img{
+  border-radius: 12px;
+  width: 90%;
+  height: 80%;
+}
+
+mat-icon{
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+mat-icon:hover{
+  color: rgb(227, 10, 10);
+}
+mat-progress-spinner{
+  margin: 0 auto;
+}

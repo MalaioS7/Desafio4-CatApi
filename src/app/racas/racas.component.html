@@ -1,0 +1,41 @@
+<body>
+    <!-- <p>racas works!</p>
+    <p>Informe o ID:</p>
+    <input [(ngModel)]="id" (keyup.enter)="consulta()">
+    <button (click)="consulta()">Enviar</button>
+    <br>
+    <p>{{ dados.name }}</p>
+    <p>{{ dados.origin }}</p>
+    <br>
+    <img [src]="img" width="25%">
+    <br> -->
+    <br>
+    <main>
+    <mat-form-field appearance="fill">
+      <mat-label>Selecione a raça:</mat-label>
+      <mat-select [(ngModel)]="selectedValue" (selectionChange)="Mostre()">
+          <mat-option *ngFor="let race of races" [value]="race.id">
+            {{race.name}}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-card class="card" *ngIf="selectedValue">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title> {{ dados.name}}</mat-card-title>
+          <mat-card-subtitle><strong>País de origem</strong>: {{ dados.origin }}</mat-card-subtitle>
+          <mat-card-subtitle><strong>Tempo de vida</strong>: {{ dados.life_span }}</mat-card-subtitle>
+          <mat-card-subtitle><strong>Temperamento</strong>: {{ dados.temperament }}</mat-card-subtitle>
+          <mat-card-subtitle><strong>Inteligência</strong>: {{ dados.intelligence }}</mat-card-subtitle>
+          <mat-card-subtitle><strong>Adaptabilidade:</strong> {{ dados.adaptability }}</mat-card-subtitle>
+          <a mat-card-subtitle [href]="dados.wikipedia_url" target="_blank"><button >WIKIPEDIA</button></a>
+          <img mat-card-xl-image style="border: 1px solid rgb(96, 93, 93); border-radius: 12px;" [src]="dados.image.url">
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content >
+        <label>{{ dados.description || "" }}</label>
+      </mat-card-content>
+    </mat-card>
+  </main>
+</body>

@@ -1,0 +1,11 @@
+<header>
+  <!-- <h1 [routerLink]="['/favorite']">NameChatCat</h1> -->
+    <mat-toolbar>
+      <span>MyChatCat-API</span>
+      <nav mat-tab-nav-bar>
+        <a mat-tab-link routerLink="images" (click)="changeTab('images')"  [active]="activeTab == 'images'">Imagens</a>
+        <a mat-tab-link routerLink="racas" (click)="changeTab('racas')" [active]="activeTab == 'racas'">Raças</a>
+        <a mat-tab-link routerLink="favorite" (click)="changeTab('favorite')"  [active]="activeTab == 'favorite'">Favoritos</a>
+      </nav>
+    </mat-toolbar>
+</header>

@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 2px;
+}
+
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+nav{
+  margin-left: 50vh;
+}
+
+.example-action-button {
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+header{
+  width: 100%;
+}

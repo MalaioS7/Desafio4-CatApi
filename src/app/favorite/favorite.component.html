@@ -1,0 +1,6 @@
+<main>
+  <div class="card" *ngFor="let race of races" >
+    <mat-icon (click)="removerFavoritos(race.id)">cancel</mat-icon><br><br>
+    <img [src]="race.image.url">
+  </div>
+</main>
